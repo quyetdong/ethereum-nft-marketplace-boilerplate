@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useMoralis } from "react-moralis";
 import MoralisDappContext from "./context";
+const abi = require('./nftabi.json');
 
 function MoralisDappProvider({ children }) {
   const { web3, Moralis, user } = useMoralis();
   const [walletAddress, setWalletAddress] = useState();
-  const [chainId, setChainId] = useState();       
-  const [contractABI, setContractABI] = useState('{"noContractDeployed": true}'); //Smart Contract ABI here
-  const [marketAddress, setMarketAddress] = useState(); //Smart Contract Address Here
-
+  const [chainId, setChainId] = useState();
+  const [contractABI, setContractABI] = useState(JSON.stringify(abi)); //Smart Contract ABI here
+  const [marketAddress, setMarketAddress] = useState('0x782e7aC41AA39d9BC6DA41d7AA1A5229440E8B56'); //Smart Contract Address Here
 
   useEffect(() => {
     Moralis.onChainChanged(function (chain) {
