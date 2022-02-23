@@ -1,4 +1,20 @@
 export const networkCollections = {
+  "0x4": [
+    //Add Your Collections here
+    {
+      image:
+        "https://lh3.googleusercontent.com/BWCni9INm--eqCK800BbRkL10zGyflxfPwTHt4XphMSWG3XZvPx1JyGdfU9vSor8K046DJg-Q8Y4ioUlWHiCZqgR_L00w4vcbA-w=s0",
+      name: "NFTTutorial Collection",
+      addrs: "0x782e7ac41aa39d9bc6da41d7aa1a5229440e8b56",
+    },
+    {
+      image:
+        "https://ipfs.moralis.io:2053/ipfs/QmfLbpeVHxReWKNLaXTPcWiafi49eoAL4gRwMGuXtx2Eqe/images/14.png",
+      name: "NFTTutorial Show",
+      addrs: "0xd0a7633a5a83a0829f93a4880e72c1ad5c5f0d78",
+    }
+  ],
+
   "0x13881": [
     //Add Your Collections here
     {
